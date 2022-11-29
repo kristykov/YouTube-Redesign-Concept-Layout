@@ -4,13 +4,11 @@
   --light-text-color: #898989;
   --dark-text-color: #19202c;
   --active: #ff0000;
-
   --huge-font-size: 36px;
   --big-font-size: 26px;
   --medium-font-size: 18px;
   --normal-font-size: 16px;
   --small-font-size: 13px;
-
   --font-medium: 500;
   --font-regular: 400;
 }
@@ -64,6 +62,8 @@ header {
 .video-player-header-controls {
   display: none;
 }
+
+/*========== Home Page ==========*/
 
 .search-bar {
   width: 51%;
@@ -400,6 +400,8 @@ img[alt='user'] {
   color: var(--light-text-color);
 }
 
+/*========== Channel Page ==========*/
+
 .section-channel-img {
   width: 80px;
   height: 80px;
@@ -557,7 +559,7 @@ img[alt='user'] {
   padding-left: 6px;
 }
 
-/*========== Third page ==========*/
+/*========== Video player page ==========*/
 
 .main-container {
   width: 92%;
