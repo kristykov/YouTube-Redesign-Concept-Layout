@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap");
 
 :root {
   --light-text-color: #898989;
@@ -17,7 +17,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
+}
+
+h1 a,
+h4 a {
+  color: var(--dark-text-color);
 }
 
 a {
@@ -99,7 +104,7 @@ header {
   border-bottom-right-radius: 22px;
 }
 
-img[alt='search-btn'] {
+img[alt="search-btn"] {
   width: 19px;
   height: 19px;
 }
@@ -116,22 +121,22 @@ img[alt='search-btn'] {
   display: none;
 }
 
-img[alt='video'] {
+img[alt="video"] {
   width: 27px;
   height: 20px;
 }
 
-img[alt='settings'] {
+img[alt="settings"] {
   width: 21px;
   height: 21px;
 }
 
-img[alt='notification'] {
+img[alt="notification"] {
   width: 22px;
   height: 26px;
 }
 
-img[alt='user'] {
+img[alt="user"] {
   width: 40px;
   height: 40px;
 }
@@ -382,11 +387,11 @@ img[alt='user'] {
 }
 
 .slide-prev {
-  background-image: url('./assets/prev.png');
+  background-image: url("./assets/prev.png");
 }
 
 .slide-next {
-  background-image: url('./assets/next.png');
+  background-image: url("./assets/next.png");
 }
 
 .slider-item {
@@ -790,14 +795,14 @@ img[alt='user'] {
   cursor: pointer;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   -webkit-appearance: none;
   background-color: #ebebeb;
   border: none;
 }
 
 .switch::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   left: 2px;
