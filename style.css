@@ -117,6 +117,11 @@ img[alt="search-btn"] {
   justify-content: space-between;
 }
 
+.controls-settings-icon {
+  width: 21px;
+  height: 21px;
+}
+
 .channel-page-user {
   display: none;
 }
@@ -126,9 +131,11 @@ img[alt="video"] {
   height: 20px;
 }
 
-img[alt="settings"] {
-  width: 21px;
-  height: 21px;
+img[alt="setting"] {
+  position: relative;
+  left: 4px;
+  width: 19px;
+  height: 20px;
 }
 
 img[alt="notification"] {
@@ -162,7 +169,6 @@ img[alt="user"] {
 
 .main {
   display: flex;
-  /* overflow: hidden; */
 }
 
 .main-channel-page {
@@ -178,7 +184,7 @@ img[alt="user"] {
 }
 
 .sidebar-list {
-  gap: 26px;
+  gap: 29.5px;
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -188,60 +194,84 @@ img[alt="user"] {
   display: flex;
 }
 
+.sidebar-link-content {
+  display: flex;
+  position: relative;
+}
+
+.link-icon {
+  position: absolute;
+}
+
 .home-link {
   width: 20px;
   height: 19px;
+  left: 2px;
 }
 
 .trending-link {
   width: 16px;
   height: 21px;
+  left: 4px;
 }
 
 .subs-link {
   width: 18px;
   height: 18px;
+  top: 2px;
+  left: 3px;
 }
 
 .sidebar-link-title {
-  padding-left: 12px;
+  padding-left: 10px;
   font-size: var(--normal-font-size);
   color: var(--light-text-color);
   font-weight: var(--font-regular);
 }
 
+.sidebar-link-menu-title {
+  padding-left: 35px;
+}
+
 .sidebar-rest {
-  padding: 57px 0px 63px;
+  padding: 57px 0px 55px;
 }
 
 .lib-link {
   width: 20px;
   height: 16px;
+  left: 2px;
+  top: 2px;
 }
 
 .history-link {
   width: 20px;
   height: 18px;
+  left: 2px;
 }
 
 .watch-later-link {
   width: 17px;
   height: 19px;
+  left: 4px;
 }
 
 .fav-link {
   width: 19px;
   height: 18px;
+  left: 3px;
 }
 
 .likes-link {
   width: 18px;
   height: 17px;
+  left: 3px;
 }
 
 .music-link {
   width: 18px;
   height: 20px;
+  left: 3px;
 }
 
 .games-link {
@@ -252,6 +282,8 @@ img[alt="user"] {
 .show-more-link {
   width: 14px;
   height: 8px;
+  left: 5px;
+  top: 5px;
 }
 
 .active-link {
@@ -259,18 +291,23 @@ img[alt="user"] {
 }
 
 .subscriptions {
-  padding-bottom: 100px;
+  padding-bottom: 106px;
 }
 
 .subscriptions-title {
-  padding-bottom: 29px;
+  padding-bottom: 28px;
+  font-size: var(--medium-font-size);
 }
 
 .subscriptions-list {
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 23px;
   list-style: none;
+}
+
+.subscriptions-list-title {
+  padding-top: 6px;
 }
 
 .subscriptions-item {
@@ -278,9 +315,15 @@ img[alt="user"] {
   align-items: center;
 }
 
+.subscriptions-link {
+  display: flex;
+}
+
 .subscriptions-item img {
   width: 26px;
   height: 26px;
+  position: relative;
+  top: 3px;
 }
 
 .main-content {
@@ -288,6 +331,10 @@ img[alt="user"] {
 }
 
 .setting {
+  display: flex;
+}
+
+.setting-link {
   display: flex;
 }
 
@@ -310,21 +357,16 @@ img[alt="user"] {
   top: 6px;
 }
 
-.user-section .slider-controls {
-  top: 44px;
-}
-
 .section-data {
   display: flex;
   align-items: center;
-  width: 206px;
   justify-content: space-between;
   margin-bottom: 31px;
 }
 
-.data-long {
-  width: 478px;
-  margin-bottom: 32px;
+.section-data-content {
+  display: flex;
+  align-items: center;
 }
 
 .section-title-img {
@@ -342,19 +384,26 @@ img[alt="user"] {
 }
 
 .home-page-title {
+  padding: 2px 0px 0px 20px;
   font-size: 26px;
+}
+
+.title-recommend {
+  padding: 0px;
 }
 
 .slider {
   display: flex;
   gap: 40px;
-  overflow: scroll;
+  overflow-x: auto;
 }
 
 .slider-controls {
-  position: absolute;
-  top: 24px;
+  position: relative;
   right: 140px;
+  top: 15px;
+  display: flex;
+  gap: 8px;
 }
 
 .section-subscribe-btn {
@@ -395,24 +444,52 @@ img[alt="user"] {
 }
 
 .slider-item {
-  height: 200px;
   width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.slider-item-video {
+  display: grid;
+}
+
+.slider-item-img {
+  grid-area: 1/2;
+}
+
 .slider-item-big {
   width: 540px;
-  height: 300px;
 }
 
 .slider-item-title {
-  padding-top: 6px;
+  padding-top: 9px;
 }
 
-.slider-tite-description {
+.slider-item-timer {
+  grid-area: 1/2;
+  display: flex;
+  align-items: end;
+  justify-content: right;
+  padding-bottom: 11px;
+  padding-right: 9px;
+}
+
+.slider-item-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 24px;
+  background: #000000;
+  color: #fff;
+  opacity: 0.3;
+  border-radius: 12px;
+}
+
+.slider-title-description {
   padding-top: 10px;
+  padding-left: 20px;
   font-size: var(--normal-font-size);
 }
 
@@ -420,8 +497,17 @@ img[alt="user"] {
   display: flex;
   justify-content: space-between;
   text-align: justify;
+  padding-top: 5px;
   font-size: var(--small-font-size);
   color: var(--light-text-color);
+}
+
+.slider-item-comma {
+  padding: 0px 3px 0px 4px;
+}
+
+.container-small-font {
+  font-size: 12px;
 }
 
 /*========== Channel Page ==========*/
@@ -589,10 +675,6 @@ img[alt="user"] {
   width: 92%;
   display: flex;
   margin: 0 auto;
-}
-
-.main-video-container {
-  width: 87%;
 }
 
 .video-section {
@@ -764,7 +846,6 @@ img[alt="user"] {
 }
 
 .side-video-container {
-  width: 23%;
   margin-left: 40px;
 }
 
@@ -849,7 +930,7 @@ input[type="checkbox"] {
 }
 
 .side-slider-channel .slider-item-title {
-  padding-top: 0px;
+  padding-top: 10px;
   padding-bottom: 0px;
   font-size: var(--normal-font-size);
 }
@@ -863,13 +944,32 @@ input[type="checkbox"] {
 }
 
 /*========== MEDIA QUERIES ==========*/
+@media screen and (max-width: 1630px) {
+  .main-content {
+    width: 84%;
+  }
+
+  .recommended-channel {
+    padding-right: 0px;
+  }
+}
+
 @media screen and (max-width: 1330px) {
   /* channel page only */
   .main-channel-page {
     overflow: unset;
   }
+
+  .main-content {
+    width: 78%;
+  }
+
   .current-channel-menu {
-    gap: 30px;
+    gap: 20px;
+  }
+
+  .side-slider .slider-item-title {
+    font-size: 20px;
   }
 
   .section-channel-content {
@@ -877,8 +977,8 @@ input[type="checkbox"] {
     padding-top: 30px;
   }
 
-  .recommended-channel {
-    padding-right: 28px;
+  .controls {
+    padding: 0px;
   }
 
   .channel-content-data {
@@ -893,6 +993,14 @@ input[type="checkbox"] {
 @media screen and (max-width: 1024px) {
   .section-title {
     font-size: var(--big-font-size);
+  }
+
+  .main-content {
+    width: 76%;
+  }
+
+  .controls-list {
+    gap: 30px;
   }
 
   .video-controls {
@@ -925,9 +1033,15 @@ input[type="checkbox"] {
   }
 }
 
+@media screen and (max-width: 840px) {
+  .main-content {
+    width: 72%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .channel-page-header {
-    width: 98%;
+    width: 92%;
     margin: 0 auto;
   }
 
@@ -937,6 +1051,10 @@ input[type="checkbox"] {
 
   .menu {
     display: none;
+  }
+
+  .slider-item-timer {
+    grid-area: 1/-1;
   }
 
   .main-video-container {
@@ -1055,9 +1173,27 @@ input[type="checkbox"] {
     height: 12px;
   }
 
+  .video-player-header {
+    width: 92%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .main-links {
+    gap: 0px;
+  }
+
   .video-data-subs {
     display: block;
     color: var(--light-text-color);
+  }
+
+  .subscribe-btn {
+    display: none;
+  }
+
+  .channel-subscribe-btn {
+    display: block;
   }
 
   .subscribe-link {
@@ -1123,7 +1259,6 @@ input[type="checkbox"] {
   }
 
   .slider {
-    width: 85%;
     flex-direction: column;
     overflow: unset;
   }
@@ -1147,7 +1282,9 @@ input[type="checkbox"] {
 
   .slider-item-img {
     width: 100%;
-    height: 200px;
+    grid-area: 1/-1;
+    object-fit: cover;
+    border-radius: 12px;
   }
 }
 
@@ -1193,6 +1330,10 @@ input[type="checkbox"] {
     display: none;
   }
 
+  .slider-title-description {
+    display: none;
+  }
+
   .banner-container img {
     height: 100px;
   }
@@ -1207,6 +1348,11 @@ input[type="checkbox"] {
 
   .controls-container {
     display: none;
+  }
+
+  .section-channel {
+    width: 90%;
+    margin: 0 auto;
   }
 
   .section-channel-user {
@@ -1241,9 +1387,7 @@ input[type="checkbox"] {
   }
 
   .current-channel-menu-responsive {
-    gap: 41px;
     margin: 0px 16px 24px 16px;
-    justify-content: unset;
   }
 
   .current-channel-link a {
@@ -1270,12 +1414,6 @@ input[type="checkbox"] {
 
   .controls-container {
     width: auto;
-  }
-
-  .video-player-header {
-    width: 92%;
-    margin: 0 auto;
-    justify-content: space-between;
   }
 
   .video-player-header-controls {
@@ -1362,6 +1500,11 @@ input[type="checkbox"] {
     width: 100%;
     background: #fff;
     padding: 13px 14px 26px 14px;
+  }
+
+  .video-data-image {
+    width: 50px;
+    height: 50%;
   }
 
   .footer-list {
@@ -1484,11 +1627,6 @@ input[type="checkbox"] {
     width: 90%;
     margin: 0 auto;
     padding-top: 20px;
-  }
-
-  .video-data-image {
-    width: 50px;
-    height: 50%;
   }
 
   .video-data-subs {

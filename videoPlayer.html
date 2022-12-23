@@ -50,7 +50,11 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="./assets/settings.png" alt="settings" />
+                  <img
+                    class="controls-settings-icon"
+                    src="./assets/settings.png"
+                    alt="settings"
+                  />
                 </a>
               </li>
               <li class="notification-btn">
@@ -68,255 +72,291 @@
           </div>
         </div>
       </header>
+      <!-- </div> -->
+      <!--========== MAIN ==========-->
+      <main class="main">
+        <div class="main-container">
+          <div class="main-video-container">
+            <section class="video-section">
+              <div class="video-section-container">
+                <img
+                  class="video-section-img"
+                  src="./assets/main-video.png"
+                  alt="main-video"
+                />
+
+                <div class="video-controls">
+                  <div class="progress-bar-container">
+                    <div class="video-controls-time">
+                      <span>1:34</span>
+                      <span>19:00</span>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="range"></div>
+                    </div>
+                  </div>
+                  <div class="video-controls-container">
+                    <div class="video-controls-btns">
+                      <img src="./assets/Pause-btn.png" alt="pause" />
+                      <img src="./assets/Next-btn.png" alt="next" />
+                      <img src="./assets/Volume-btn.png" alt="volume" />
+                    </div>
+                    <div class="video-controls-settings">
+                      <img src="./assets/Subtitles-btn.png" alt="subtitles" />
+                      <img src="./assets/Settings-btn.png" alt="settings" />
+                      <img src="./assets/Size-btn.png" alt="size" />
+                      <img
+                        src="./assets/Full Screen-btn.png"
+                        alt="full-screen"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!--========== RESPONSIVE VIDEO CONTROLS ==========-->
+                <div class="video-controls-responsive">
+                  <div class="video-controls-container-responsive">
+                    <img
+                      class="responsive-pause-img"
+                      src="./assets/Pause-btn.png"
+                      alt="pause"
+                    />
+                    <div class="progress-bar-responsive">
+                      <span class="progress-bar-time">1:34</span>
+                      <div class="range"></div>
+                      <span class="progress-bar-time">19:00</span>
+                    </div>
+                    <img
+                      class="responsive-volume-img"
+                      src="./assets/Volume.png"
+                      alt="volume"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-content-container">
+                <img
+                  class="more-btn"
+                  src="./assets/expand-btn.png"
+                  alt="more-button"
+                />
+                <h1 class="section-title">Dude You Re Getting A Telescope</h1>
+                <div class="video-content-info">
+                  <p class="video-content-detail">123k views</p>
+                  <ul class="video-content-list">
+                    <li class="video-content-link">
+                      <img src="./assets/thumb-up.png" alt="thumb-up-icon" />
+                      <p>123k</p>
+                    </li>
+                    <li class="video-content-link">
+                      <img
+                        src="./assets/thumb-down.png"
+                        alt="thumb-down-icon"
+                      />
+                      <p>435k</p>
+                    </li>
+                    <li class="video-content-link">
+                      <img src="./assets/share-icon.png" alt="share-icon" />
+                      <p>Share</p>
+                    </li>
+                    <li class="video-content-link content-link-last">
+                      <img src="./assets/more-icon.png" alt="thumb-up-icon" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section class="video-data-section">
+              <p class="subscribe-link">Subscribe</p>
+              <button class="subscribe-btn video-data-btn">
+                Subscribe 2.3m
+              </button>
+
+              <img
+                class="video-data-image"
+                src="./assets/video-desc-img.png"
+                alt="video-data-image"
+              />
+              <div class="video-data-content">
+                <h2 class="video-data-title">Food & Drink</h2>
+                <p class="video-data-subtitle">Published on 14 Jun 2019</p>
+                <p class="video-data-description">
+                  A successful marketing plan relies heavily on the
+                  pulling-power of advertising copy. Writing result-oriented ad
+                  copy is difficult, as it must appeal to, entice, and convince
+                  consumers to take action. There is no magic formula to write
+                  perfect ad copy; it is based on a number of factors, including
+                  ad placement, demographic, even the consumer’s mood when they
+                  see your ad.
+                </p>
+                <p class="video-data-detail">Show more</p>
+                <p class="video-data-subs">245K subscribed</p>
+              </div>
+            </section>
+          </div>
+          <div class="side-video-container">
+            <section class="side-video-section">
+              <div class="side-data">
+                <h2 class="section-title">Next</h2>
+                <div class="switch-container">
+                  <label class="switch-label" for="switcher">autoplay</label>
+                  <input id="switcher" type="checkbox" class="switch" />
+                </div>
+              </div>
+              <div class="slider side-slider">
+                <div class="slider-item">
+                  <div class="slider-item-video">
+                    <img
+                      class="slider-item-img"
+                      src="./assets/cover-small-2-1.png"
+                      alt="cover"
+                    />
+                    <div class="slider-item-timer">
+                      <span class="slider-item-time">8:00</span>
+                    </div>
+                  </div>
+                  <h4 class="slider-item-title">Baby Monitor Technology</h4>
+                  <div class="slider-item-description">
+                    <span>123k views</span>
+                    <span>Dollie Blair</span>
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="slider-item-video">
+                    <img
+                      class="slider-item-img"
+                      src="./assets/cover-small-2-2.png"
+                      alt="cover"
+                    />
+                    <div class="slider-item-timer">
+                      <span class="slider-item-time">8:00</span>
+                    </div>
+                  </div>
+                  <h4 class="slider-item-title">A Good Autoresponder</h4>
+                  <div class="slider-item-description">
+                    <span>123k views</span>
+                    <span>Dollie Blair</span>
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="slider-item-video">
+                    <img
+                      class="slider-item-img"
+                      src="./assets/cover-small-2-3.png"
+                      alt="cover"
+                    />
+                    <div class="slider-item-timer">
+                      <span class="slider-item-time">8:00</span>
+                    </div>
+                  </div>
+                  <h4 class="slider-item-title">Selecting The Right Hotel</h4>
+                  <div class="slider-item-description">
+                    <span>123k views</span>
+                    <span>Dollie Blair</span>
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="slider-item-video">
+                    <img
+                      class="slider-item-img"
+                      src="./assets/cover-small-2-4.png"
+                      alt="cover"
+                    />
+                    <div class="slider-item-timer">
+                      <span class="slider-item-time">8:00</span>
+                    </div>
+                  </div>
+                  <h4 class="slider-item-title">Baby Monitor Technology</h4>
+                  <div class="slider-item-description">
+                    <span>86k views</span>
+                    <span>Food & Drink</span>
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="slider-item-video">
+                    <img
+                      class="slider-item-img"
+                      src="./assets/cover-small-2-5.png"
+                      alt="cover"
+                    />
+                    <div class="slider-item-timer">
+                      <span class="slider-item-time">8:00</span>
+                    </div>
+                  </div>
+                  <h4 class="slider-item-title">Asteroids</h4>
+                  <div class="slider-item-description">
+                    <span>123k views</span>
+                    <span>Food & Drink</span>
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="slider-item-video">
+                    <img
+                      class="slider-item-img"
+                      src="./assets/cover-small-2-6.png"
+                      alt="cover"
+                    />
+                    <div class="slider-item-timer">
+                      <span class="slider-item-time">8:00</span>
+                    </div>
+                  </div>
+                  <h4 class="slider-item-title">A Good Autoresponder</h4>
+                  <div class="slider-item-description">
+                    <span>45k views</span>
+                    <span>Food & Drink</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!--========== FOOTER ==========-->
+        <footer class="responsive-footer">
+          <ul class="footer-list">
+            <li class="sidebar-link footer-link">
+              <a href="#">
+                <img class="home-link" src="./assets/home-link.png" alt="home"
+              /></a>
+              <a href="#">
+                <h4 class="sidebar-link-title footer-link-title">Home</h4>
+              </a>
+            </li>
+            <li class="sidebar-link footer-link">
+              <a href="#"
+                ><img
+                  class="trending-link"
+                  src="./assets/trending-link.png"
+                  alt="trending"
+              /></a>
+              <a href="#">
+                <h4 class="sidebar-link-title footer-link-title">Trending</h4>
+              </a>
+            </li>
+            <li class="sidebar-link footer-link">
+              <a href="#"
+                ><img
+                  class="subs-link"
+                  src="./assets/subs-link.png"
+                  alt="subscription"
+              /></a>
+              <a href="#">
+                <h4 class="sidebar-link-title footer-link-title">
+                  Subscriptions
+                </h4>
+              </a>
+            </li>
+            <li class="sidebar-link footer-link">
+              <a href="#"
+                ><img class="lib-link" src="./assets/lib-link.png" alt="home"
+              /></a>
+              <a href="#">
+                <h4 class="sidebar-link-title footer-link-title">Library</h4>
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </main>
     </div>
-    <!--========== MAIN ==========-->
-    <main class="main">
-      <div class="main-container">
-        <div class="main-video-container">
-          <section class="video-section">
-            <div class="video-section-container">
-              <img
-                class="video-section-img"
-                src="./assets/main-video.png"
-                alt="main-video"
-              />
-
-              <div class="video-controls">
-                <div class="progress-bar-container">
-                  <div class="video-controls-time">
-                    <span>1:34</span>
-                    <span>19:00</span>
-                  </div>
-                  <div class="progress-bar">
-                    <div class="range"></div>
-                  </div>
-                </div>
-                <div class="video-controls-container">
-                  <div class="video-controls-btns">
-                    <img src="./assets/Pause-btn.png" alt="pause" />
-                    <img src="./assets/Next-btn.png" alt="next" />
-                    <img src="./assets/Volume-btn.png" alt="volume" />
-                  </div>
-                  <div class="video-controls-settings">
-                    <img src="./assets/Subtitles-btn.png" alt="subtitles" />
-                    <img src="./assets/Settings-btn.png" alt="settings" />
-                    <img src="./assets/Size-btn.png" alt="size" />
-                    <img src="./assets/Full Screen-btn.png" alt="full-screen" />
-                  </div>
-                </div>
-              </div>
-
-              <!--========== RESPONSIVE VIDEO CONTROLS ==========-->
-              <div class="video-controls-responsive">
-                <div class="video-controls-container-responsive">
-                  <img
-                    class="responsive-pause-img"
-                    src="./assets/Pause-btn.png"
-                    alt="pause"
-                  />
-                  <div class="progress-bar-responsive">
-                    <span class="progress-bar-time">1:34</span>
-                    <div class="range"></div>
-                    <span class="progress-bar-time">19:00</span>
-                  </div>
-                  <img
-                    class="responsive-volume-img"
-                    src="./assets/Volume.png"
-                    alt="volume"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="video-content-container">
-              <img
-                class="more-btn"
-                src="./assets/expand-btn.png"
-                alt="more-button"
-              />
-              <h1 class="section-title">Dude You Re Getting A Telescope</h1>
-              <div class="video-content-info">
-                <p class="video-content-detail">123k views</p>
-                <ul class="video-content-list">
-                  <li class="video-content-link">
-                    <img src="./assets/thumb-up.png" alt="thumb-up-icon" />
-                    <p>123k</p>
-                  </li>
-                  <li class="video-content-link">
-                    <img src="./assets/thumb-down.png" alt="thumb-down-icon" />
-                    <p>435k</p>
-                  </li>
-                  <li class="video-content-link">
-                    <img src="./assets/share-icon.png" alt="share-icon" />
-                    <p>Share</p>
-                  </li>
-                  <li class="video-content-link content-link-last">
-                    <img src="./assets/more-icon.png" alt="thumb-up-icon" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <section class="video-data-section">
-            <p class="subscribe-link">Subscribe</p>
-            <button class="subscribe-btn video-data-btn">Subscribe 2.3m</button>
-
-            <img
-              class="video-data-image"
-              src="./assets/video-desc-img.png"
-              alt="video-data-image"
-            />
-            <div class="video-data-content">
-              <h2 class="video-data-title">Food & Drink</h2>
-              <p class="video-data-subtitle">Published on 14 Jun 2019</p>
-              <p class="video-data-description">
-                A successful marketing plan relies heavily on the pulling-power
-                of advertising copy. Writing result-oriented ad copy is
-                difficult, as it must appeal to, entice, and convince consumers
-                to take action. There is no magic formula to write perfect ad
-                copy; it is based on a number of factors, including ad
-                placement, demographic, even the consumer’s mood when they see
-                your ad.
-              </p>
-              <p class="video-data-detail">Show more</p>
-              <p class="video-data-subs">245K subscribed</p>
-            </div>
-          </section>
-        </div>
-        <div class="side-video-container">
-          <section class="side-video-section">
-            <div class="side-data">
-              <h2 class="section-title">Next</h2>
-              <div class="switch-container">
-                <label class="switch-label" for="switcher">autoplay</label>
-                <input id="switcher" type="checkbox" class="switch" />
-              </div>
-            </div>
-            <div class="slider side-slider">
-              <div class="slider-item">
-                <img
-                  class="slider-item-img"
-                  src="./assets/cover-small-2-1.png"
-                  alt="cover"
-                />
-                <h4 class="slider-item-title">Baby Monitor Technology</h4>
-                <div class="slider-item-description">
-                  <span>123k views</span>
-                  <span>Dollie Blair</span>
-                </div>
-              </div>
-              <div class="slider-item">
-                <img
-                  class="slider-item-img"
-                  src="./assets/cover-small-2-2.png"
-                  alt="cover"
-                />
-                <h4 class="slider-item-title">A Good Autoresponder</h4>
-                <div class="slider-item-description">
-                  <span>123k views</span>
-                  <span>Dollie Blair</span>
-                </div>
-              </div>
-              <div class="slider-item">
-                <img
-                  class="slider-item-img"
-                  src="./assets/cover-small-2-3.png"
-                  alt="cover"
-                />
-                <h4 class="slider-item-title">Selecting The Right Hotel</h4>
-                <div class="slider-item-description">
-                  <span>123k views</span>
-                  <span>Dollie Blair</span>
-                </div>
-              </div>
-              <div class="slider-item">
-                <img
-                  class="slider-item-img"
-                  src="./assets/cover-small-2-4.png"
-                  alt="cover"
-                />
-                <h4 class="slider-item-title">Baby Monitor Technology</h4>
-                <div class="slider-item-description">
-                  <span>86k views</span>
-                  <span>7 days ago</span>
-                  <span>Food & Drink</span>
-                </div>
-              </div>
-              <div class="slider-item">
-                <img
-                  class="slider-item-img"
-                  src="./assets/cover-small-2-5.png"
-                  alt="cover"
-                />
-                <h4 class="slider-item-title">Asteroids</h4>
-                <div class="slider-item-description">
-                  <span>123k views</span>
-                  <span>4 months ago</span>
-                  <span>Food & Drink</span>
-                </div>
-              </div>
-              <div class="slider-item">
-                <img
-                  class="slider-item-img"
-                  src="./assets/cover-small-2-6.png"
-                  alt="cover"
-                />
-                <h4 class="slider-item-title">A Good Autoresponder</h4>
-                <div class="slider-item-description">
-                  <span>45k views</span>
-                  <span>3 months ago</span>
-                  <span>Food & Drink</span>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-      <!--========== FOOTER ==========-->
-      <footer class="responsive-footer">
-        <ul class="footer-list">
-          <li class="sidebar-link footer-link">
-            <a href="#">
-              <img class="home-link" src="./assets/home-link.png" alt="home"
-            /></a>
-            <a href="#">
-              <h4 class="sidebar-link-title footer-link-title">Home</h4>
-            </a>
-          </li>
-          <li class="sidebar-link footer-link">
-            <a href="#"
-              ><img
-                class="trending-link"
-                src="./assets/trending-link.png"
-                alt="trending"
-            /></a>
-            <a href="#">
-              <h4 class="sidebar-link-title footer-link-title">Trending</h4>
-            </a>
-          </li>
-          <li class="sidebar-link footer-link">
-            <a href="#"
-              ><img
-                class="subs-link"
-                src="./assets/subs-link.png"
-                alt="subscription"
-            /></a>
-            <a href="#">
-              <h4 class="sidebar-link-title footer-link-title">
-                Subscriptions
-              </h4>
-            </a>
-          </li>
-          <li class="sidebar-link footer-link">
-            <a href="#"
-              ><img class="lib-link" src="./assets/lib-link.png" alt="home"
-            /></a>
-            <a href="#">
-              <h4 class="sidebar-link-title footer-link-title">Library</h4>
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </main>
   </body>
 </html>
